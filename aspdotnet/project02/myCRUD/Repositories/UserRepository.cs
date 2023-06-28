@@ -14,14 +14,28 @@ namespace myCRUD.Repositories
             _dbContext = tasksSystemDBContext;
         }
 
-        Task<UserModel> IUserRepository.addUser(UserModel user)
+
+        async Task<UserModel> IUserRepository.addUser(UserModel user)
         {
-            throw new NotImplementedException();
+            await _dbContext.Users.AddAsync(user);
+            await _dbContext.SaveChangesAsync();
+
+            return user;
         }
 
-        Task<bool> IUserRepository.Delete(int id)
+        async Task<bool> IUserRepository.Delete(int id)
         {
-            throw new NotImplementedException();
+            UserModel userById = await ((IUserRepository)this).getUserById(id);
+
+           if(userById==null)
+           {
+                throw new Exception($"User from id:{id} don't exist in the databases");
+           }
+
+           _dbContext.Users.Remove(userById);
+           await _dbContext.SaveChangesAsync();
+
+           return true;
         }
 
         async Task<List<UserModel>> IUserRepository.getAllUsers()
@@ -34,9 +48,22 @@ namespace myCRUD.Repositories
             return await _dbContext.Users.FirstOrDefaultAsync(x => x.Id == id);
         }
 
-        Task<UserModel> IUserRepository.updateUser(UserModel user, int id)
+        async Task<UserModel> IUserRepository.updateUser(UserModel user, int id)
         {
-            throw new NotImplementedException();
+           UserModel userById = await ((IUserRepository)this).getUserById(id);
+
+           if(userById==null)
+           {
+                throw new Exception($"User from id:{id} don't exist in the databases");
+           }
+
+           userById.Name = user.Name;
+           userById.Email = user.Email;
+
+           _dbContext.Users.Update(userById);
+           await _dbContext.SaveChangesAsync();
+
+           return userById;
         }
     }
 }

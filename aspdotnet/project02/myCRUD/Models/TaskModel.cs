@@ -1,3 +1,5 @@
+using myCRUD.Enums;
+
 namespace myCRUD.Models
 {
     public class TaskModel
@@ -5,6 +7,6 @@ namespace myCRUD.Models
         public int Id { get; set; }
         public string? Name { get; set; }
         public string? Description { get; set; }
-        public int Status { get; set; }
+        public TaskStatus Status { get; set; }
     }
 }
