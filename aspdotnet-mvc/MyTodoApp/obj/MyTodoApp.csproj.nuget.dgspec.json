@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/gilson/repositories/todolist/MyTodoApp/MyTodoApp.csproj": {}
+    "/home/gilson/repositories/dotnet-apis/aspdotnet-mvc/MyTodoApp/MyTodoApp.csproj": {}
   },
   "projects": {
-    "/home/gilson/repositories/todolist/MyTodoApp/MyTodoApp.csproj": {
+    "/home/gilson/repositories/dotnet-apis/aspdotnet-mvc/MyTodoApp/MyTodoApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/gilson/repositories/todolist/MyTodoApp/MyTodoApp.csproj",
+        "projectUniqueName": "/home/gilson/repositories/dotnet-apis/aspdotnet-mvc/MyTodoApp/MyTodoApp.csproj",
         "projectName": "MyTodoApp",
-        "projectPath": "/home/gilson/repositories/todolist/MyTodoApp/MyTodoApp.csproj",
+        "projectPath": "/home/gilson/repositories/dotnet-apis/aspdotnet-mvc/MyTodoApp/MyTodoApp.csproj",
         "packagesPath": "/home/gilson/.nuget/packages/",
-        "outputPath": "/home/gilson/repositories/todolist/MyTodoApp/obj/",
+        "outputPath": "/home/gilson/repositories/dotnet-apis/aspdotnet-mvc/MyTodoApp/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/gilson/.nuget/NuGet/NuGet.Config"

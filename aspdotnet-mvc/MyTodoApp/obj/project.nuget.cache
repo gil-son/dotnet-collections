@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RFsUEPEOUq3/AvCUuGczx19dx1yYqOiMxLmK6TpUa6nmc+y7Cmw+0Ne8093nWczzLU3xm5WgTD6vrGf8dKnCZw==",
+  "dgSpecHash": "Cax/UBtH5Tg9Slt+ooUKnO4pFFLvSztRSL+Sa1mwRFf5cfm+9PowlktIkp7QckCHrxR4YMGfisx87jjuuwgdcQ==",
   "success": true,
-  "projectFilePath": "/home/gilson/repositories/todolist/MyTodoApp/MyTodoApp.csproj",
+  "projectFilePath": "/home/gilson/repositories/dotnet-apis/aspdotnet-mvc/MyTodoApp/MyTodoApp.csproj",
   "expectedPackageFiles": [
     "/home/gilson/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
     "/home/gilson/.nuget/packages/messagepack/2.1.152/messagepack.2.1.152.nupkg.sha512",
